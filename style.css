@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root {
+    --bg-color:#f0fbff;
+    --primary-color: #3a3132;
+    --secundary-color: #0f4571;
+    --tercenary-color: #386dbd;
+}
+
+body {
+    font-family: 'Rubik',sans-serif;
+    background-color: var(--bg-color);
+}
+
+ul, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    list-style: none;
+     text-decoration: none;
+}
+
+
+ #welcomeMessage {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-transform: uppercase;
+
+    background-color: var(--tercenary-color);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: var(--bg-color);
+    margin-top: 20px;
+
+}
+
+
+.happy {
+    background-color: var(--tercenary-color);
+    position: fixed;
+    z-index: 100;
+    bottom: 5%;
+    right: 5%;
+
+    padding: 0.5rem;
+
+    color: var(--bg-color);
+    height: 3rem;
+    width: 3rem;
+    font-size: 18px;
+
+    border: none;
+    border-radius: 100%;
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.happy:hover {
+    transform: scale(1.06);
+    transition: all 0.3s;
+}
+
+
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.header {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleName {
+    margin-top: 2rem;
+    color: var(--primary-color);
+    text-align: center;
+
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.titleSub {
+     font-size: 1rem;
+      font-weight: bold;
+      color: #333;
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+}
+
+.sectionInfo {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 2rem;
+}
+
+.about {
+    margin-top: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.titleAbout {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+
+
+.description {
+    margin-top: 0.5rem;
+    color: var(--secundary-color);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2; 
+    letter-spacing: 0.5px;
+}
+
+
+/* >>>>>> >>>>>>  >>>> HOBBIE <<< <<<<< <<<<<<< */
+
+.sectionHobbie {
+    width: 100%;
+    height: 29rem;
+
+    background-color: var(--secundary-color);
+    background-size: cover;
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+    margin: 0 auto;
+}
+
+.icon {
+    height: 1.5rem;
+}
+
+.titleHobbie  {
+    margin-bottom: 2rem;
+    color: var(--bg-color);
+    font-size: 1.5rem;
+}
+
+.ulHobbie {
+    color: var(--bg-color);
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 0.5rem;
+   
+}
+
+
+.li {
+    border: 1px solid var(--bg-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.banner {
+    height: 9rem;
+    width: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1rem;
+    gap:1rem;
+}
+
+.link {
+    border: 1px solid var(--bg-color);
+    background-color: var(--bg-color);
+    color: var(--secundary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding:0.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+.link:hover {
+    transition: all 0.3s;
+    transform: scale(1.03);
+}
+
+
+
+/* >>>>>>>>>>>>>>>>     TABLE    <<<<<<<<<<<<<<< */
+
+.titleTable {
+    margin-block : 3.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    font-weight: bold;
+    border-radius: 0.5rem;
+}
+
+th, td {
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+}
+.bandeira {
+    width: 300px;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+
+
+/* >>>>>>>>>>>>>>>   FOOTER <<<<<<<<<<<<<< */
+
+.footer {
+    width: 100%;
+    height: 10rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secundary-color);
+}
+
+.socialMedias {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    gap: 1rem;
+}
+
+
+.iconLinkedin {
+    height: 2.5rem;
+}
+
+.iconGitHub {
+    height: 1.7rem
+}
+
+.iconInstagram {
+    height: 2.2rem;
+}
+
+.iconInstagram:hover, .iconGitHub:hover, .iconLinkedin:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+.footerP {
+    margin-top: 0.5rem;
+    color: var(--bg-color);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+
+@media (min-width: 700px) {
+
+    .happy {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .titleHobbie, .titleAbout, .titleTable {
+        font-size: 2rem;
+    }
+
+    .li {
+        font-size: 1rem;
+    }
+
+   .ulHobbie {
+    color: var(--bg-color);
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner {
+        height: 9rem;
+        width: auto;
+        border-radius: 0.5rem;
+        object-fit: cover;
+    }
+
+    .bandeira {
+        width:400px;
+        height: 10rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+
+}
